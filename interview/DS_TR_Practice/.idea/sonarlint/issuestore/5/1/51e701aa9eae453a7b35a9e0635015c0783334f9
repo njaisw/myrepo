@@ -1,0 +1,20 @@
+
+T
+squid:S106o"9Replace this use of System.out or System.err by a logger.(·ºØÌøÿÿÿÿ
+psquid:S2293+"YReplace the type specification in this constructor call with the diamond operator ("<>").(·ŸèÒ
+Psquid:S2864s"4Iterate over the "entrySet" instead of the "keySet".(ÜáéÖùÿÿÿÿ
+Usquid:S1197“"8Move the array designator from the variable to the type.(¡şÏÖøÿÿÿÿ
+usquid:S2293X"YReplace the type specification in this constructor call with the diamond operator ("<>").(²Ë©øÿÿÿÿ
+psquid:S22932"YReplace the type specification in this constructor call with the diamond operator ("<>").(°´£
+qsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ñ»ó øÿÿÿÿ8¡™‚Éú-
+usquid:S2293|"YReplace the type specification in this constructor call with the diamond operator ("<>").(´ŸÆÿÿÿÿÿ
+psquid:S2293("YReplace the type specification in this constructor call with the diamond operator ("<>").(ˆÓïé
+psquid:S2293#"YReplace the type specification in this constructor call with the diamond operator ("<>").(Û‹±
+usquid:S2293)"YReplace the type specification in this constructor call with the diamond operator ("<>").(³Ó” ûÿÿÿÿ
+usquid:S2293^"YReplace the type specification in this constructor call with the diamond operator ("<>").(µŠà„úÿÿÿÿ
+T
+squid:S106F"9Replace this use of System.out or System.err by a logger.(Ášúÿÿÿÿ
+usquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ù‚‹™ùÿÿÿÿ
+csquid:S00112x"FDefine and throw a dedicated exception instead of using a generic one.(¯åÕøÿÿÿÿ
+fsquid:S00100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(òº±Æ
+usquid:S2293K"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ù‚‹™ùÿÿÿÿ

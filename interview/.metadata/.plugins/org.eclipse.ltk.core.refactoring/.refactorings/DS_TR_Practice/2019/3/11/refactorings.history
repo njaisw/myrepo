@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;_com.ds.binarysearch.SearchInsertPosition&apos; to &apos;SearchInsertPosition_1&apos;&#x0D;&#x0A;- Original project: &apos;DS_TR_Practice&apos;&#x0D;&#x0A;- Original element: &apos;_com.ds.binarysearch.SearchInsertPosition&apos;&#x0D;&#x0A;- Renamed element: &apos;_com.ds.binarysearch.SearchInsertPosition_1&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;SearchInsertPosition&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;_com.ds.binarysearch{SearchInsertPosition.java[SearchInsertPosition" matchStrategy="1" name="SearchInsertPosition_1" qualified="false" references="true" similarDeclarations="false" stamp="1552769617012" textual="false" version="1.0"/>
+</session>

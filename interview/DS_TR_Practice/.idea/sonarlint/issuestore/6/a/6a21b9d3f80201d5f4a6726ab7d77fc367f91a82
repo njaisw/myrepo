@@ -1,0 +1,8 @@
+
+jsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(„ü´‹ÿÿÿÿÿ
+O
+squid:S106b"9Replace this use of System.out or System.err by a logger.(ìÿáá
+Tsquid:S1197T"8Move the array designator from the variable to the type.(¡þÏÖøÿÿÿÿ
+osquid:S3008"SRename this field "INFINITY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ö³âŒþÿÿÿÿ
+nsquid:CommentedOutCodeLine2"<This block of commented-out lines of code should be removed.(É«’®þÿÿÿÿ8µž¶·ú-
+nsquid:S00117."QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­óç¾üÿÿÿÿ

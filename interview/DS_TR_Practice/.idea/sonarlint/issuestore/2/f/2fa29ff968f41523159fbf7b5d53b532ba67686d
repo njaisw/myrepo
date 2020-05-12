@@ -1,0 +1,14 @@
+
+^squid:S1126¤"AReplace this if-then-else statement by a single return statement.(ö“î¼ûÿÿÿÿ
+usquid:S22937"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÅâÖ¸ùÿÿÿÿ
+psquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¤œ¥å
+usquid:S2293>"YReplace the type specification in this constructor call with the diamond operator ("<>").(êİ•Õúÿÿÿÿ
+usquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Í‚©Íşÿÿÿÿ
+osquid:S2293C"YReplace the type specification in this constructor call with the diamond operator ("<>").(Â‘Ü+
+osquid:S2293)"YReplace the type specification in this constructor call with the diamond operator ("<>").(–—É
+
+Psquid:S1135E"2Complete the task associated to this TODO comment.(‹Êèã8ŞèÊ³ú-
+Usquid:S1135B"2Complete the task associated to this TODO comment.(µèî‰úÿÿÿÿ8Ñ¶Ç³ú-
+qsquid:S00101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ûìõ“øÿÿÿÿ8­†‡‘ú-
+{squid:S1149^"_Replace the synchronized class "StringBuffer" by an unsynchronized one such as "StringBuilder".(¨âàøÿÿÿÿ
+Psquid:S1135H"2Complete the task associated to this TODO comment.(‹Êèã8ŒØÏ³ú-

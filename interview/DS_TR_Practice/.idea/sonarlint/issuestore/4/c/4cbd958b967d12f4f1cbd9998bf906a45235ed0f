@@ -1,0 +1,22 @@
+
+]squid:S1126"AReplace this if-then-else statement by a single return statement.(õÀ¥Ôşÿÿÿÿ
+Tsquid:S1197U"8Move the array designator from the variable to the type.(¡şÏÖøÿÿÿÿ
+Gsquid:S1481Z"+Remove this unused "result" local variable.(å±êÜıÿÿÿÿ
+Osquid:S1197"8Move the array designator from the variable to the type.(š™…Û
+Zsquid:S1155C">Use isEmpty() to check whether the collection is empty or not.(©ñ‚úıÿÿÿÿ
+Tsquid:S1197Z"8Move the array designator from the variable to the type.(å±êÜıÿÿÿÿ
+]squid:S1126C"AReplace this if-then-else statement by a single return statement.(©ñ‚úıÿÿÿÿ
+T
+squid:S106 "9Replace this use of System.out or System.err by a logger.(ÃÖŸ¿øÿÿÿÿ
+bsquid:CommentedOutCodeLineX"<This block of commented-out lines of code should be removed.(š«úÃ
+Zsquid:S1155<">Use isEmpty() to check whether the collection is empty or not.(ÜÈ¦æùÿÿÿÿ
+T
+squid:S106""9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+bsquid:CommentedOutCodeLine["<This block of commented-out lines of code should be removed.(ë‘éÿ
+psquid:S22935"YReplace the type specification in this constructor call with the diamond operator ("<>").(Çƒ·
+Vsquid:S1854Z":Remove this useless assignment to local variable "result".(å±êÜıÿÿÿÿ
+Tsquid:S1197"8Move the array designator from the variable to the type.(ª’á½ùÿÿÿÿ
+O
+squid:S106]"9Replace this use of System.out or System.err by a logger.(à÷Ï¢
+Osquid:S1197%"8Move the array designator from the variable to the type.(ä©¦Õ
+ksquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÓÔ|8ô²¿Ìú-

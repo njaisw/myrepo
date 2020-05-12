@@ -1,0 +1,13 @@
+
+bsquid:CommentedOutCodeLineo"<This block of commented-out lines of code should be removed.(‹ÀÈì
+gsquid:CommentedOutCodeLineS"<This block of commented-out lines of code should be removed.(Â´¨÷üÿÿÿÿ
+Zsquid:HiddenFieldCheckM"8Rename "time" which hides the field declared at line 36.(‡×çà
+Zsquid:HiddenFieldCheckT"8Rename "time" which hides the field declared at line 36.(‡×çà
+O
+squid:S106"9Replace this use of System.out or System.err by a logger.(§úÈµ
+Csquid:S1612",Replace this lambda with a method reference.(§úÈµ
+Tsquid:S1197a"8Move the array designator from the variable to the type.(¡þÏÖøÿÿÿÿ
+usquid:S2293}"YReplace the type specification in this constructor call with the diamond operator ("<>").(ëÇÕ’øÿÿÿÿ
+gsquid:CommentedOutCodeLineL"<This block of commented-out lines of code should be removed.(¹æµšúÿÿÿÿ
+fsquid:S001004"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(«¸ðÍ
+jsquid:S00101""MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(§ï‰²üÿÿÿÿ

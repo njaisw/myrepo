@@ -1,0 +1,12 @@
+
+Tsquid:S1197\"8Move the array designator from the variable to the type.(¡þÏÖøÿÿÿÿ
+Osquid:S1197'"8Move the array designator from the variable to the type.(Òø
+Zsquid:S1596G">Replace "Collections.EMPTY_LIST" by "Collections.emptyList()".(÷ƒ¨öúÿÿÿÿ
+nsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 35 to the 15 allowed.(ÏšÑùÿÿÿÿ
+Usquid:S1155">Use isEmpty() to check whether the collection is empty or not.(¨ÿ”Ý
+t
+squid:S135("YReduce the total number of break and continue statements in this loop to use at most one.(ƒŽÌçÿÿÿÿÿ
+O
+squid:S106b"9Replace this use of System.out or System.err by a logger.(½„¤‡
+qsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ª²§¡þÿÿÿÿ8éø±Ìú-
+Zsquid:S1596">Replace "Collections.EMPTY_LIST" by "Collections.emptyList()".(÷ƒ¨öúÿÿÿÿ

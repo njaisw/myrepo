@@ -1,0 +1,9 @@
+1: https://howtodoinjava.com/java/multi-threading/executor-framework-tutorial/
+ Java executor framework best practices
+
+    1:Always run your java code against static analysis tools like PMD and FindBugs to look for deeper issues. They are very helpful in determining ugly situations which may arise in future.
+    2:Always cross check and better plan a code review with senior guys to detect and possible deadlock or livelock in code during execution. 
+      Adding a health monitor in your application to check the status of running tasks is an excellent choice in most of the scenarios.
+    3:In multi-threaded programs, make a habit of catching errors too, not just exceptions. Sometimes unexpected things happen and Java throws an error at you, apart from an exception.
+    4:Use a back-off switch, so if something goes wrong and is non-recoverable, you don’t escalate the situation by eagerly starting another loop. Instead, you need to wait until the situation goes back to normal and then start again.
+    5:Please note that the whole point of executors is to abstract away the specifics of execution, so ordering is not guaranteed unless explicitly stated.

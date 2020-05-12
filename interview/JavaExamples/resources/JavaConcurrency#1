@@ -1,0 +1,187 @@
+https://stackoverflow.com/questions/22112469/threadpoolexecutor-how-does-it-reuse-threads
+
+https://www.baeldung.com/java-concurrency-interview-questions
+
+1. Introduction
+
+Q1. What is the difference between a process and a thread?
+----------------------------------------------------------
+
+Both processes and threads are units of concurrency, but they have a fundamental difference: processes do not share a common memory, while threads do.
+From the operating system’s point of view, a process is an independent piece of software that runs in its own virtual memory space. 
+Any multitasking operating system (which means almost any modern operating system) has to separate processes in memory so that one failing process wouldn’t drag all other processes down by scrambling common memory.
+
+The processes are thus usually isolated, and they cooperate by the means of inter-process communication which is defined by the operating system as a kind of intermediate API.
+
+On the contrary, a thread is a part of an application that shares a common memory with other threads of the same application. 
+Using common memory allows to shave off lots of overhead, design the threads to cooperate and exchange data between them much faster.
+
+Q2. How can you create a Thread instance and run it?
+-----------------------------------------------------
+To create an instance of a thread, you have two options. First, pass a Runnable instance to its constructor and call start(). Runnable is a functional interface, so it can be passed as a lambda expression:
+Thread thread1 = new Thread(() ->
+  System.out.println("Hello World from Runnable!"));
+thread1.start();
+
+Thread also implements Runnable, so another way of starting a thread is to create an anonymous subclass, override its run() method, and then call start():
+Thread thread2 = new Thread() {
+    @Override
+    public void run() {
+        System.out.println("Hello World from subclass!");
+    }
+};
+thread2.start();
+
+Q3. Describe the different states of a Thread and when do the state transitions occur.
+-------------------------------------------------------------------------------------
+
+The state of a Thread can be checked using the Thread.getState() method. Different states of a Thread are described in the Thread.State enum. They are:
+
+    NEW — a new Thread instance that was not yet started via Thread.start()
+    RUNNABLE — a running thread. It is called runnable because at any given time it could be either running or waiting for the next quantum of time from the thread scheduler.
+               A NEW thread enters the RUNNABLE state when you call Thread.start() on it
+    BLOCKED — a running thread becomes blocked if it needs to enter a synchronized section but cannot do that due to another thread holding the monitor of this section
+    WAITING — a thread enters this state if it waits for another thread to perform a particular action. 
+    		  For instance, a thread enters this state upon calling the Object.wait() method on a monitor it holds, or the Thread.join() method on another thread
+    TIMED_WAITING — same as the above, but a thread enters this state after calling timed versions of Thread.sleep(), Object.wait(), Thread.join() and some other methods
+    TERMINATED — a thread has completed the execution of its Runnable.run() method and terminated
+
+Q4. What is the difference between the Runnable and Callable interfaces? How are they used?
+------------------------------------------------------------------------------------------
+The Runnable interface has a single run method. It represents a unit of computation that has to be run in a separate thread. 
+The Runnable interface does not allow this method to return value or to throw unchecked exceptions.
+                                                                        
+The Callable interface has a single call method and represents a task that has a value. That’s why the call method returns a value. 
+It can also throw exceptions. Callable is generally used in ExecutorService instances to start an asynchronous task and then call the returned Future instance to get its value.
+
+Q5. What is a daemon thread, what are its use cases? How can you create a daemon thread?
+----------------------------------------------------------------------------------------
+
+A daemon thread is a thread that does not prevent JVM from exiting. When all non-daemon threads are terminated, the JVM simply abandons all remaining daemon threads.
+ Daemon threads are usually used to carry out some supportive or service tasks for other threads, but you should take into account that they may be abandoned at any time.
+
+To start a thread as a daemon, you should use the setDaemon() method before calling start():
+Thread daemon = new Thread(()
+  -> System.out.println("Hello from daemon!"));
+daemon.setDaemon(true);
+daemon.start();
+
+Curiously, if you run this as a part of the main() method, the message might not get printed. 
+This could happen if the main() thread would terminate before the daemon would get to the point of printing the message.
+You generally should not do any I/O in daemon threads, as they won’t even be able to execute their finally blocks and close the resources if abandoned.
+
+Q6. What is the Thread’s interrupt flag? How can you set and check it? How does it relate to the InterruptedException?
+-----------------------------------------------------------------------------------------------------------------------
+The interrupt flag, or interrupt status, is an internal Thread flag that is set when the thread is interrupted. To set it, simply call thread.interrupt() on the thread object.
+
+If a thread is currently inside one of the methods that throw InterruptedException (wait, join, sleep etc.), then this method immediately throws InterruptedException. The thread is free to process this exception according to its own logic.
+
+If a thread is not inside such method and thread.interrupt() is called, nothing special happens. It is thread’s responsibility to periodically check the interrupt status using static Thread.interrupted() or instance isInterrupted() method. The difference between these methods is that the static Thread.interrupt() clears the interrupt flag, while isInterrupted() does not.
+
+Q7. What are Executor and ExecutorService? What are the differences between these interfaces?
+--------------------------------------------------------------------------------------------
+Executor and ExecutorService are two related interfaces of java.util.concurrent framework. 
+Executor is a very simple interface with a single execute method accepting Runnable instances for execution. In most cases, this is the interface that your task-executing code should depend on.
+
+ExecutorService extends the Executor interface with multiple methods for handling and checking the lifecycle of a concurrent task execution service (termination of tasks in case of shutdown) 
+and methods for more complex asynchronous task handling including Futures.
+
+Q8. What are the available implementations of ExecutorService in the standard library?
+-------------------------------------------------------------------------------------
+The ExecutorService interface has three standard implementations:
+
+    ThreadPoolExecutor — for executing tasks using a pool of threads. Once a thread is finished executing the task, it goes back into the pool. If all threads in the pool are busy, then the task has to wait for its turn.
+    ScheduledThreadPoolExecutor allows to schedule task execution instead of running it immediately when a thread is available. It can also schedule tasks with fixed rate or fixed delay.
+    ForkJoinPool is a special ExecutorService for dealing with recursive algorithms tasks. If you use a regular ThreadPoolExecutor for a recursive algorithm, you will quickly find all your threads are busy waiting for 
+                 the lower levels of recursion to finish. The ForkJoinPool implements the so-called work-stealing algorithm that allows it to use available threads more efficiently.
+
+Q9. What special guarantees does the JMM hold for final fields of a class?
+-------------------------------------------------------------------------
+JVM basically guarantees that final fields of a class will be initialized before any thread gets hold of the object. 
+Without this guarantee, a reference to an object may be published, i.e. become visible, to another thread before all the fields of this object are initialized, due to reorderings or other optimizations. This could cause racy access to these fields.
+
+This is why, when creating an immutable object, you should always make all its fields final, even if they are not accessible via getter methods.
+
+Q10. What is the meaning of a synchronized keyword in the definition of a method? Of a static method? Before a block?
+---------------------------------------------------------------------------------------------------------------------
+The synchronized keyword before a block means that any thread entering this block has to acquire the monitor (the object in brackets). 
+If the monitor is already acquired by another thread, the former thread will enter the BLOCKED state and wait until the monitor is released.
+	
+synchronized(object) {
+    // ...
+		}
+
+A synchronized instance method has the same semantics, but the instance itself acts as a monitor.
+synchronized void instanceMethod() {
+    // ...
+    }
+For a static synchronized method, the monitor is the Class object representing the declaring class.
+static synchronized void staticMethod() {
+    // ...
+    }
+    
+Q11. If two threads call a synchronized method on different object instances simultaneously, could one of these threads block? What if the method is static?
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+If the method is an instance method, then the instance acts as a monitor for the method. Two threads calling the method on different instances acquire different monitors, so none of them gets blocked.
+
+If the method is static, then the monitor is the Class object. For both threads, the monitor is the same, so one of them will probably block and wait for another to exit the synchronized method.
+
+Q12. What is the purpose of the wait, notify and notifyAll methods of the Object class?
+--------------------------------------------------------------------------------------
+
+A thread that owns the object’s monitor (for instance, a thread that has entered a synchronized section guarded by the object) may call object.wait() to temporarily release the monitor and give other threads a chance to acquire the monitor. This may be done, for instance, to wait for a certain condition.
+
+When another thread that acquired the monitor fulfills the condition, it may call object.notify() or object.notifyAll() and release the monitor. The notify method awakes a single thread in the waiting state, and the notifyAll method awakes all threads that wait for this monitor, and they all compete for re-acquiring the lock.
+
+The following BlockingQueue implementation shows how multiple threads work together via the wait-notify pattern. If we put an element into an empty queue, all threads that were waiting in the take method wake up and try to receive the value. If we put an element into a full queue, the put method waits for the call to the get method. The get method removes an element and notifies the threads waiting in the put method that the queue has an empty place for a new item.
+
+public class BlockingQueue<T> {
+ 
+    private List<T> queue = new LinkedList<T>();
+ 
+    private int limit = 10;
+ 
+    public synchronized void put(T item) {
+        while (queue.size() == limit) {
+            try {
+                wait();
+            } catch (InterruptedException e) {}
+        }
+        if (queue.isEmpty()) {
+            notifyAll();
+        }
+        queue.add(item);
+    }
+ 
+    public synchronized T take() throws InterruptedException {
+        while (queue.isEmpty()) {
+            try {
+                wait();
+            } catch (InterruptedException e) {}
+        }
+        if (queue.size() == limit) {
+            notifyAll();
+        }
+        return queue.remove(0);
+    }
+     
+}
+Q13. Describe the conditions of deadlock, livelock, and starvation. Describe the possible causes of these conditions.
+--------------------------------------------------------------------------------------------------------------------
+Deadlock is a condition within a group of threads that cannot make progress because every thread in the group has to acquire some resource that is already acquired by another thread in the group. 
+The most simple case is when two threads need to lock both of two resources to progress, the first resource is already locked by one thread, and the second by another. 
+These threads will never acquire a lock to both resources and thus will never progress.
+
+Livelock is a case of multiple threads reacting to conditions, or events, generated by themselves. 
+An event occurs in one thread and has to be processed by another thread. During this processing, a new event occurs which has to be processed in the first thread, and so on. 
+Such threads are alive and not blocked, but still, do not make any progress because they overwhelm each other with useless work.
+
+Starvation is a case of a thread unable to acquire resource because other thread (or threads) occupy it for too long or have higher priority. A thread cannot make progress and thus is unable to fulfill useful work.
+
+Q14. Describe the purpose and use-cases of the fork/join framework.
+------------------------------------------------------------------
+The fork/join framework allows parallelizing recursive algorithms. The main problem with parallelizing recursion using something like ThreadPoolExecutor is that you may quickly run out of threads because 
+each recursive step would require its own thread, while the threads up the stack would be idle and waiting.
+
+The fork/join framework entry point is the ForkJoinPool class which is an implementation of ExecutorService. It implements the work-stealing algorithm, where idle threads try to “steal” work from busy threads. 
+This allows to spread the calculations between different threads and make progress while using fewer threads than it would require with a usual thread pool.

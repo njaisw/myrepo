@@ -1,0 +1,5 @@
+
+psquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìÒœ‰8±ÌÔ™ø-
+lsquid:S3824"NReplace this "Map.get()" and condition with a call to "Map.computeIfAbsent()".(¦ÄıÅ8ŠªÖ™ø-
+psquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìÒœ‰8±ÌÔ™ø-
+Rsquid:EmptyStatementUsageCheck"Remove this empty statement.(ôŸìúÿÿÿÿ8±ÌÔ™ø-

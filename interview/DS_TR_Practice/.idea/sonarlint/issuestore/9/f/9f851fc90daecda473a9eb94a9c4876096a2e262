@@ -1,0 +1,15 @@
+
+U
+squid:S106"9Replace this use of System.out or System.err by a logger.(¡Şääùÿÿÿÿ
+Psquid:S1197™"8Move the array designator from the variable to the type.(ĞÆ·û
+P
+squid:S106‚"9Replace this use of System.out or System.err by a logger.(Úüì
+osquid:S3008"SRename this field "INFINITY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(©“Úıÿÿÿÿ
+Usquid:S1197"8Move the array designator from the variable to the type.(Êºëøÿÿÿÿ
+Psquid:S1197“"8Move the array designator from the variable to the type.(Ù‘¢
+Usquid:S1197¥"8Move the array designator from the variable to the type.(Âø÷§úÿÿÿÿ
+Usquid:S1155S">Use isEmpty() to check whether the collection is empty or not.(æÖı
+vsquid:S3012«"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(…‚¶ÿÿÿÿÿ
+Psquid:S1197™"8Move the array designator from the variable to the type.(ĞÆ·û
+nsquid:S37769"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(¾ÿŠøÿÿÿÿ
+lsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(–ˆ«¼8‘µÌÅú-

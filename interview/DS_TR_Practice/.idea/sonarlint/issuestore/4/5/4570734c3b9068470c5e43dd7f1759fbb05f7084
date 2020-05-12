@@ -1,0 +1,18 @@
+
+Tsquid:S1197"8Move the array designator from the variable to the type.(ö ¼Öþÿÿÿÿ
+nsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 26 to the 15 allowed.(›úÜ¥øÿÿÿÿ
+T
+squid:S106\"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ
+T
+squid:S106Y"9Replace this use of System.out or System.err by a logger.(Øç¤Ùþÿÿÿÿ
+Tsquid:S1197_"8Move the array designator from the variable to the type.(¡þÏÖøÿÿÿÿ
+N
+squid:S106l"9Replace this use of System.out or System.err by a logger.(‹É¯
+Osquid:S1197"8Move the array designator from the variable to the type.(º˜ÄÙ
+O
+squid:S106i"9Replace this use of System.out or System.err by a logger.(šÕ‡ó
+T
+squid:S106J"9Replace this use of System.out or System.err by a logger.(Ôä†ãýÿÿÿÿ
+T
+squid:S106n"9Replace this use of System.out or System.err by a logger.(ÞžÒ—üÿÿÿÿ
+lsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(È˜Ãñ8·ÌÓÅú-

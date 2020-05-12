@@ -1,0 +1,15 @@
+
+O
+squid:S106S"9Replace this use of System.out or System.err by a logger.(¿ï€„
+psquid:S3012"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(ÜãÈ‰
+T
+squid:S106V"9Replace this use of System.out or System.err by a logger.(ªÓ¼áþÿÿÿÿ
+Tsquid:S1197"8Move the array designator from the variable to the type.(ê²ñÈþÿÿÿÿ
+U
+squid:S106‡"9Replace this use of System.out or System.err by a logger.(ŠÓšãüÿÿÿÿ
+T
+squid:S106U"9Replace this use of System.out or System.err by a logger.(ÄØ«”ûÿÿÿÿ
+ksquid:S00100]"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌÑç„úÿÿÿÿ
+Osquid:S1197"8Move the array designator from the variable to the type.(·ÂÛ—
+Tsquid:S1197}"8Move the array designator from the variable to the type.(¡þÏÖøÿÿÿÿ
+lsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(„Ôùµ8úÛÿÇú-

@@ -1,0 +1,16 @@
+
+qsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(à‚“öùÿÿÿÿ8¤´’Éú-
+?squid:S1125"(Remove the literal "true" boolean value.(üœç¥
+usquid:S2293@"YReplace the type specification in this constructor call with the diamond operator ("<>").(¦€‰ûÿÿÿÿ
+O
+squid:S106K"9Replace this use of System.out or System.err by a logger.(´ Ï
+psquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ş§· 
+Tsquid:S1197/"8Move the array designator from the variable to the type.(¡şÏÖøÿÿÿÿ
+jsquid:S3824""NReplace this "Map.get()" and condition with a call to "Map.computeIfAbsent()".(Şÿöúÿÿÿÿ
+usquid:S22938"YReplace the type specification in this constructor call with the diamond operator ("<>").(—Í·ùüÿÿÿÿ
+psquid:S2293F"YReplace the type specification in this constructor call with the diamond operator ("<>").(×ô›â
+Jsquid:S1172".Remove this unused method parameter "allJobs".(Àâñœÿÿÿÿÿ
+osquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(‹’è-
+psquid:S22935"YReplace the type specification in this constructor call with the diamond operator ("<>").(‘²—Â
+usquid:S22930"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÿŸùúÿÿÿÿ
+usquid:S2293;"YReplace the type specification in this constructor call with the diamond operator ("<>").(ë¿úÿÿÿÿ

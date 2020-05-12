@@ -1,0 +1,93 @@
+1: Difference between JMS, AMQP and MQTT
+https://medium.com/@chanakaudaya/comparison-of-asynchronous-messaging-technologies-with-jms-amqp-and-mqtt-4f1bc21c26c5
+
+2: Datastructure Videos
+Tushar Roy- https://www.youtube.com/channel/UCZLJf_R2sWyUtXSKiKlyvAw
+Andul bari- https://www.youtube.com/channel/UCZCFT11CWBi3MHNlGf019nw/videos
+
+3:Load Balancer
+https://www.nginx.com/resources/glossary/load-balancing/
+
+4:CAP Theorem-
+http://www.julianbrowne.com/article/brewers-cap-theorem
+http://robertgreiner.com/2014/08/cap-theorem-revisited/
+
+5:SQL vs NoSQL
+http://blog.nahurst.com/visual-guide-to-nosql-systems
+https://maxivak.com/rdbms-vs-nosql-databases/
+
+6: Master/Slave database, why pairing maste/slave database boost web response.
+https://www.quora.com/What-are-Master-and-Slave-databases-and-how-does-pairing-them-make-web-apps-faster
+https://www.quora.com/What-is-the-importance-of-a-slave-database
+
+7: Scaling using Mysql
+https://medium.com/@Pinterest_Engineering/sharding-pinterest-how-we-scaled-our-mysql-fleet-3f341e96ca6f
+
+8:Paxos:
+https://www.coursera.org/lecture/cloud-computing/3-3-paxos-simply-0Y9In
+wikipedia
+
+9:Scalability lecture- must listen
+https://www.youtube.com/watch?v=-W9F__D3oY4
+http://highscalability.com/numbers-everyone-should-know
+
+10: HashTable/Hashing
+https://www.youtube.com/watch?v=mFY0J5W8Udk
+https://medium.com/omarelgabrys-blog/hash-tables-2fec6870207f
+
+11:HashMap Internal in Java
+https://javaconceptoftheday.com/initial-capacity-and-load-factor-of-hashmap-in-java/
+https://javaconceptoftheday.com/how-hashmap-works-internally-in-java/
+
+12:Consistent Hashing
+https://www.youtube.com/watch?v=jznJKL0CrxM
+https://www.toptal.com/big-data/consistent-hashing
+https://www.youtube.com/watch?v=zaRkONvyGr8
+
+13: System Design
+https://github.com/donnemartin/system-design-primer
+https://dev.to/fahimulhaq/top-10-system-design-interview-questions-for-software-engineers
+Tushar Roy
+https://www.educative.io/collection/page/5668639101419520/5649050225344512/5673385510043648
+https://www.interviewbit.com/courses/system-design/
+https://www.hiredintech.com/classrooms/system-design/lesson/55
+
+14:Microservices Architecture
+https://www.youtube.com/watch?v=Zed6udTPGro
+https://www.youtube.com/watch?v=EpyPFnjue38
+
+15:Data Structure and Algorithms
+https://www.educative.io/collection/page/5642554087309312/5679846214598656/240002
+https://www.educative.io/collection/page/5642554087309312/5724822843686912/5695219446054912
+
+16: Dropbox
+https://www.youtube.com/watch?reload=9&v=PE4gwstWhmc
+
+17: Microservices
+https://www.youtube.com/watch?v=CZ3wIuvmHeM
+https://www.ibm.com/developerworks/websphere/library/techarticles/1601_clark-trs/1601_clark.html
+
+18: Youtube Scalability:
+https://www.youtube.com/watch?v=w5WVu624fY8
+
+19: Facebook
+https://www.infoq.com/presentations/Scale-at-Facebook
+
+
+20:SOA vs microservices
+https://www.youtube.com/watch?v=7kCSVECNYc4
+
+21: scaliblity at intagram
+https://www.youtube.com/watch?v=hnpzNAPiC0E&t=471s
+
+22: Scalabity Patterns
+http://horicky.blogspot.com/2010/10/scalable-system-design-patterns.html
+
+23: Design Patterns
+https://howtodoinjava.com/gang-of-four-java-design-patterns/
+
+24: Denormalization of database
+https://mapr.com/blog/guidelines-hbase-schema-design/
+
+25 Bloom filters
+https://www.youtube.com/watch?v=-SuTGoFYjZs

@@ -1,0 +1,12 @@
+http://www.singhajit.com/decorator-design-pattern/
+What Is Decorator Pattern?
+
+Decorator design pattern is a pattern which modifies the functionality of an object. 
+In other words it gives different flavours to an object without using inheritance. 
+You might think why not use inheritance if you are talking about flavours? Well, yes these are flavours but the permutation and combination of these flavours can be many and in that case it doesn’t make sense to create a class for each combination.
+
+Lets say you have 6 factors that can change the characteristics of your object, in that case you will have factorial of 6 which is, 6! = 720, so there can be 720 objects with different characteristics.
+
+When to use it?
+
+This pattern can be used when you have a requirement that you have to add characteristics to an object at runtime. And the factors that can affect the object’s characteristics are many.

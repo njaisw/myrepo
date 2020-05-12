@@ -1,0 +1,4 @@
+
+isquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(Ëä‹Ï
+Osquid:S1197)"8Move the array designator from the variable to the type.(•–‚
+qsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ù®ÜÔøÿÿÿÿ8ÌĞÅú-

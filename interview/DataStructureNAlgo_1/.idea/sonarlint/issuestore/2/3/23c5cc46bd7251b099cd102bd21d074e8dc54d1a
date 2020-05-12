@@ -1,0 +1,13 @@
+
+jsquid:S00101&"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(·ÌÔÈúÿÿÿÿ
+Fsquid:S5411A"*Use the primitive boolean expression here.(ï¸¬²úÿÿÿÿ
+Osquid:S1197("8Move the array designator from the variable to the type.(ëÂ˜ö
+usquid:S2293*"YReplace the type specification in this constructor call with the diamond operator ("<>").(êîúÿÿÿÿÿ
+Tsquid:S1197?"8Move the array designator from the variable to the type.(ÎÍµúÿÿÿÿ
+Tsquid:S1197@"8Move the array designator from the variable to the type.(¿µšòûÿÿÿÿ
+T
+squid:S106B"9Replace this use of System.out or System.err by a logger.(–¼óÄûÿÿÿÿ
+O
+squid:S106D"9Replace this use of System.out or System.err by a logger.(½¾ÌÉ
+bsquid:CommentedOutCodeLine
+"<This block of commented-out lines of code should be removed.(®Œ¼¶

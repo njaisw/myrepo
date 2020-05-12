@@ -1,0 +1,18 @@
+
+Osquid:S1197"8Move the array designator from the variable to the type.(ÒÆ¦°
+Tsquid:S1197?"8Move the array designator from the variable to the type.(€‘¥£üÿÿÿÿ
+Tsquid:S1197="8Move the array designator from the variable to the type.(¡şÏÖøÿÿÿÿ
+]squid:S1854>"ARemove this useless assignment to local variable "notChaininput".(ÂÁØşıÿÿÿÿ
+Zsquid:S1155B">Use isEmpty() to check whether the collection is empty or not.(•µ§¿şÿÿÿÿ
+Osquid:S1197"8Move the array designator from the variable to the type.(îÙ¤Í
+Tsquid:S1197>"8Move the array designator from the variable to the type.(ÂÁØşıÿÿÿÿ
+]squid:S1126""AReplace this if-then-else statement by a single return statement.(ßİÑ…ùÿÿÿÿ
+Osquid:S1197"8Move the array designator from the variable to the type.(«Ö÷‡
+Osquid:S1197"8Move the array designator from the variable to the type.(«Ö÷‡
+T
+squid:S106C"9Replace this use of System.out or System.err by a logger.(®˜«ñúÿÿÿÿ
+Nsquid:S1481>"2Remove this unused "notChaininput" local variable.(ÂÁØşıÿÿÿÿ
+T
+squid:S106F"9Replace this use of System.out or System.err by a logger.(È§ç–ıÿÿÿÿ
+psquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ä„ƒ
+ysquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ßÙ‹»8À–‡ëú-

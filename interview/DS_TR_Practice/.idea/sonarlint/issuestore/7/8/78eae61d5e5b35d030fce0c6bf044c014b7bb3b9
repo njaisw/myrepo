@@ -1,0 +1,11 @@
+
+T
+squid:S106v"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+Tsquid:S1197d"8Move the array designator from the variable to the type.(¡şÏÖøÿÿÿÿ
+gsquid:CommentedOutCodeLine-"<This block of commented-out lines of code should be removed.(éË¤úÿÿÿÿ
+gsquid:CommentedOutCodeLineO"<This block of commented-out lines of code should be removed.(¾ªáùÿÿÿÿ
+gsquid:CommentedOutCodeLineI"<This block of commented-out lines of code should be removed.(Ëå¹¾úÿÿÿÿ
+O
+squid:S106u"9Replace this use of System.out or System.err by a logger.(¢ÿÃã
+Usquid:S4973X"9Use the "equals" method if value comparison was intended.(öëó–ûÿÿÿÿ
+qsquid:S00101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¦À“Ôşÿÿÿÿ8ÀÈú-
